@@ -5,6 +5,16 @@ import './App.css';
 const MenuItem = ({children="itemX", href="#"}) => 
   <li><a class="menu-item" href={href}>{children}</a></li>
 
+const MainCard = ({children="text"}) =>
+    <section class="section"> 
+        <div class="section2"> 
+            <img class="logo-section" src="./img/section-logo.jpg" />
+            <h5 class="title-section">Lorem ipsum dolor sit amet.</h5>
+            <p class="text-section">{children}</p>
+        </div>
+        <button class="button-section">Go</button>
+    </section>
+
 
 function App () {
   return (
@@ -36,7 +46,13 @@ function App () {
             <p class="article-head-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, diam vehicula ultricies eleifend, dui neque vestibulum mauris, ac facilisis massa purus in lectus. </p>
             <h2 class="section-title">OUT WORK</h2>
             <div class="parent-section">
-                <section class="section"> 
+                <MainCard>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, diam vehicula ultricies eleifend, dui neque vestibulum.orem ipsum dolor sit amet.</MainCard>
+                <MainCard>Lorem ipsum dolor sit amet.</MainCard>
+                <MainCard>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MainCard>
+                <MainCard>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</MainCard>
+                <MainCard>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, diam vehicula ultricies eleifend, dui neque vestibulum.</MainCard>
+                <MainCard>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, diam vehicula ultricies eleifend, dui neque vestibulum.</MainCard>
+                {/* <section class="section"> 
                     <div class="section2"> 
                         <img class="logo-section" src="./img/section-logo.jpg" />
                         <h5 class="title-section">Lorem ipsum dolor sit amet.</h5>
@@ -83,7 +99,7 @@ function App () {
                         <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, diam vehicula ultricies eleifend, dui neque vestibulum.</p>
                     </div>
                     <button class="button-section">Go</button>
-                </section>
+                </section> */}
             </div>
         </article>
         <aside class="aside-right">Aside 2</aside>
